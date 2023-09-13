@@ -1,0 +1,70 @@
+header{
+    background-color: black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 50px;
+}
+nav{
+    display:flex;
+    gap:20px;
+}
+
+#events{
+    display: flex;
+    justify-content: center;
+    gap: 100px;
+    padding: 100px;
+}
+
+.eventcard{
+    text-align: center;
+    box-shadow: 0 2px 2px 2px black;
+    padding:20px;
+    border-radius: 10px;
+    width: 250px;
+}
+.eventcard1{
+    text-align: center;
+    box-shadow: 0 2px 2px 2px black;
+    padding:20px;
+    border-radius: 10px;
+    width: 500px;
+}
+body{
+    margin:0;
+    padding:0;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+#logo{
+    width:100px;
+}
+
+.nav-link{
+    color: white;
+    text-decoration: none;
+    border:2px solid white;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.navb{
+    color: black;
+    text-decoration: none;
+    border:2px solid black;
+    padding: 10px;
+    border-radius: 10px;
+}
+#ftext{
+    color:white;
+    text-align: center;
+}
+footer{
+    background-color: black;
+    display: flex;
+    padding: 10px 50px;
+    justify-content: center;
+    position :absolute;
+    bottom: 0;
+    width:100%;
+}

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EVENT REGISTRATION</title>
+    <link rel="stylesheet" href="{% static 'style.css' %}">
+</head>
+<body>
+    <header >
+        <img id="logo" src="https://media.istockphoto.com/id/1092948176/vector/illustration-fast-tires-in-black-color-logo-concept-design-template.jpg?s=612x612&w=0&k=20&c=b-jeczBGb5DMCUggabpfXMnUc2esPxsvXSBpyvLGTkY=" alt="" />
+    <nav>
+        <a class="nav-link" href="C:\Users\niyam\OneDrive\Desktop\web techbyheart\index.html">HOME</a>
+        <a class="nav-link" href="">LOGIN</a>
+        <a class="nav-link" href="">REGISTRATION</a>
+    </nav>
+    </header>
+    <section id="events">
+        {% for event in events %}
+        <div class="eventcard">
+            <h2>{{event.event_title}}</h2>
+            <p>{{event.location}}</p>
+            <p>{{event.date}}</p>
+            <a class="navb" href="{% url 'page' event.pk %}">DETAILS</a>
+        </div>
+        {% endfor %}
+    </section>
+    <footer>
+        <p id="ftext">event registration system iso 2001:2008</p>
+    </footer>
+</body>
+</html>
